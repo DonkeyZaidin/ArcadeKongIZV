@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,34 +62,54 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+                // Donkey Kong Color Palette
+                dk: {
+                    blue: '#1E1E3B',
+                    red: '#FF0000',
+                    yellow: '#FFFF00',
+                    green: '#00FF00',
+                    gray: '#808080',
+                    black: '#000000',
+                }
 			},
-			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+			fontFamily: {
+				'press-start': ['"Press Start 2P"', 'cursive'],
+				'vt323': ['"VT323"', 'monospace'],
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
-				}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+                'blink': {
+                    '0%, 100%': { opacity: '1' },
+                    '50%': { opacity: '0' }
+                },
+                'scroll': {
+                    '0%': { transform: 'translateX(100%)' },
+                    '100%': { transform: 'translateX(-100%)' }
+                },
+                'barrel-roll': {
+                    '0%': { transform: 'rotate(0deg)' },
+                    '100%': { transform: 'rotate(360deg)' }
+                },
+                'jump': {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-10px)' }
+                },
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'blink': 'blink 1s step-start infinite',
+                'scroll': 'scroll 20s linear infinite',
+                'barrel-roll': 'barrel-roll 2s linear infinite',
+                'jump': 'jump 0.5s ease-in-out',
 			}
 		}
 	},

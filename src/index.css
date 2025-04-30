@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -94,8 +97,69 @@
   * {
     @apply border-border;
   }
-
   body {
-    @apply bg-background text-foreground;
+    @apply bg-dk-blue text-white font-vt323;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-press-start;
+  }
+}
+
+@layer components {
+  .scanlines {
+    position: relative;
+  }
+  .scanlines::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      transparent 0px,
+      rgba(0, 0, 0, 0.05) 1px,
+      transparent 2px
+    );
+    pointer-events: none;
+    z-index: 10;
+  }
+  
+  .pixel-border {
+    box-shadow: 
+      0 4px 0 #FFFF00, 
+      4px 0 0 #FFFF00, 
+      0 -4px 0 #FFFF00, 
+      -4px 0 0 #FFFF00;
+  }
+  
+  .arcade-btn {
+    @apply bg-dk-red text-white font-press-start py-2 px-4 border-b-4 border-r-4 border-black hover:bg-dk-yellow hover:text-dk-black transition-all duration-200 transform hover:translate-y-1;
+  }
+  
+  .crt-frame {
+    @apply relative rounded-lg overflow-hidden;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+  }
+  
+  .crt-frame::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full pointer-events-none z-10;
+    background: 
+      radial-gradient(
+        circle at center,
+        transparent 60%,
+        rgba(0, 0, 0, 0.3) 100%
+      );
+    border-radius: 50% / 10%;
+  }
+  
+  .brick {
+    @apply bg-dk-red border-t-4 border-l-4 border-white/30 relative;
+  }
+  
+  .platform {
+    @apply bg-dk-yellow h-4 relative;
+    box-shadow: 0 4px 0 #CC9900;
   }
 }
