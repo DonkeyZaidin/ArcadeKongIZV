@@ -27,11 +27,18 @@ const TeamTabs = () => {
         AUDIOVISUALES
       </TabsTrigger>
       <TabsTrigger 
+        value="web" 
+        id="web" 
+        className="flex-1 text-lg font-press-start text-dk-gray data-[state=active]:text-dk-yellow data-[state=active]:shadow-[inset_0_-2px_0_0_#FFFF00]"
+      >
+        WEB
+      </TabsTrigger>
+      <TabsTrigger 
         value="it" 
         id="it" 
         className="flex-1 text-lg font-press-start text-dk-gray data-[state=active]:text-dk-yellow data-[state=active]:shadow-[inset_0_-2px_0_0_#FFFF00]"
       >
-        IT & WEB
+        IT
       </TabsTrigger>
     </TabsList>
   );

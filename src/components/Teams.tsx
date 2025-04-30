@@ -5,6 +5,7 @@ import TeamTabs from '@/components/teams/TeamTabs';
 import CarpentryTeam from '@/components/teams/CarpentryTeam';
 import PaintingTeam from '@/components/teams/PaintingTeam';
 import AudiovisualTeam from '@/components/teams/AudiovisualTeam';
+import WebTeam from '@/components/teams/WebTeam';
 import ITWebTeam from '@/components/teams/ITWebTeam';
 
 const Teams = () => {
@@ -33,7 +34,12 @@ const Teams = () => {
             <AudiovisualTeam />
           </TabsContent>
           
-          {/* IT & Web Tab */}
+          {/* Web Tab */}
+          <TabsContent value="web">
+            <WebTeam />
+          </TabsContent>
+          
+          {/* IT Tab */}
           <TabsContent value="it">
             <ITWebTeam />
           </TabsContent>

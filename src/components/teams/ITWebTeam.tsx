@@ -7,24 +7,24 @@ const ITWebTeam = () => {
   return (
     <Card className="bg-dk-blue border-4 border-dk-yellow overflow-hidden relative">
       <CardHeader className="border-b-4 border-dk-yellow">
-        <CardTitle className="text-dk-yellow">EQUIPO IT & WEB</CardTitle>
+        <CardTitle className="text-dk-yellow">EQUIPO DE IT</CardTitle>
       </CardHeader>
       <CardContent className="pt-6">
         <div className="grid md:grid-cols-2 gap-8">
           <div>
-            <h3 className="text-xl font-press-start mb-4 text-white">STACK TECNOLÓGICO</h3>
+            <h3 className="text-xl font-press-start mb-4 text-white">INFRAESTRUCTURA</h3>
             <div className="space-y-4 font-vt323 text-xl">
               <div className="bg-black/60 p-4 border-l-4 border-dk-green">
-                <h4 className="text-dk-green mb-2">Frontend</h4>
-                <p>HTML5, CSS3, TailwindCSS, React</p>
+                <h4 className="text-dk-green mb-2">Hardware</h4>
+                <p>Raspberry Pi 4, Arduino, Componentes electrónicos</p>
               </div>
               <div className="bg-black/60 p-4 border-l-4 border-dk-yellow">
-                <h4 className="text-dk-yellow mb-2">Backend</h4>
-                <p>Raspberry Pi 4, RetroPie, EmulationStation</p>
+                <h4 className="text-dk-yellow mb-2">Software</h4>
+                <p>RetroPie, EmulationStation, Linux</p>
               </div>
               <div className="bg-black/60 p-4 border-l-4 border-dk-red">
-                <h4 className="text-dk-red mb-2">Hardware</h4>
-                <p>Arduino, Joysticks Sanwa, Botones LED</p>
+                <h4 className="text-dk-red mb-2">Redes</h4>
+                <p>WiFi, Bluetooth, Conectividad</p>
               </div>
             </div>
           </div>
