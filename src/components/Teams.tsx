@@ -10,36 +10,31 @@ import ITWebTeam from '@/components/teams/ITWebTeam';
 
 const Teams = () => {
   return (
-    <section className="py-20 container mx-auto px-4" id="equipos">
-      <h2 className="text-3xl md:text-4xl font-press-start text-dk-yellow mb-10 text-center">
+    <section className="py-12 container mx-auto px-4" id="equipos">
+      <h2 className="text-2xl md:text-3xl font-press-start text-dk-yellow mb-6 text-center">
         LOS CONSTRUCTORES
       </h2>
       
       <Tabs defaultValue="carpinteria" className="w-full">
         <TeamTabs />
         
-        <div className="relative mt-10">
-          {/* Carpintería Tab */}
-          <TabsContent value="carpinteria" className="relative">
+        <div className="mt-6">
+          <TabsContent value="carpinteria">
             <CarpentryTeam />
           </TabsContent>
           
-          {/* Pintura Tab */}
           <TabsContent value="pintura">
             <PaintingTeam />
           </TabsContent>
           
-          {/* Audiovisuales Tab */}
           <TabsContent value="audiovisuales">
             <AudiovisualTeam />
           </TabsContent>
           
-          {/* Web Tab */}
           <TabsContent value="web">
             <WebTeam />
           </TabsContent>
           
-          {/* IT Tab */}
           <TabsContent value="it">
             <ITWebTeam />
           </TabsContent>

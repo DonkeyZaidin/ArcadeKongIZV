@@ -4,39 +4,34 @@ import { TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const TeamTabs = () => {
   return (
-    <TabsList className="w-full flex flex-wrap mb-8 bg-transparent border-b-2 border-dk-yellow">
+    <TabsList className="w-full flex flex-wrap gap-1 bg-transparent border-b border-dk-yellow">
       <TabsTrigger 
         value="carpinteria" 
-        id="carpinteria" 
-        className="flex-1 text-lg font-press-start text-dk-gray data-[state=active]:text-dk-yellow data-[state=active]:shadow-[inset_0_-2px_0_0_#FFFF00]"
+        className="flex-1 text-base font-press-start text-dk-gray data-[state=active]:text-dk-yellow data-[state=active]:border-b-2 data-[state=active]:border-dk-yellow"
       >
         CARPINTERÍA
       </TabsTrigger>
       <TabsTrigger 
         value="pintura" 
-        id="pintura" 
-        className="flex-1 text-lg font-press-start text-dk-gray data-[state=active]:text-dk-yellow data-[state=active]:shadow-[inset_0_-2px_0_0_#FFFF00]"
+        className="flex-1 text-base font-press-start text-dk-gray data-[state=active]:text-dk-yellow data-[state=active]:border-b-2 data-[state=active]:border-dk-yellow"
       >
         PINTURA
       </TabsTrigger>
       <TabsTrigger 
         value="audiovisuales" 
-        id="audiovisuales" 
-        className="flex-1 text-lg font-press-start text-dk-gray data-[state=active]:text-dk-yellow data-[state=active]:shadow-[inset_0_-2px_0_0_#FFFF00]"
+        className="flex-1 text-base font-press-start text-dk-gray data-[state=active]:text-dk-yellow data-[state=active]:border-b-2 data-[state=active]:border-dk-yellow"
       >
-        AUDIOVISUALES
+        AUDIO
       </TabsTrigger>
       <TabsTrigger 
         value="web" 
-        id="web" 
-        className="flex-1 text-lg font-press-start text-dk-gray data-[state=active]:text-dk-yellow data-[state=active]:shadow-[inset_0_-2px_0_0_#FFFF00]"
+        className="flex-1 text-base font-press-start text-dk-gray data-[state=active]:text-dk-yellow data-[state=active]:border-b-2 data-[state=active]:border-dk-yellow"
       >
         WEB
       </TabsTrigger>
       <TabsTrigger 
         value="it" 
-        id="it" 
-        className="flex-1 text-lg font-press-start text-dk-gray data-[state=active]:text-dk-yellow data-[state=active]:shadow-[inset_0_-2px_0_0_#FFFF00]"
+        className="flex-1 text-base font-press-start text-dk-gray data-[state=active]:text-dk-yellow data-[state=active]:border-b-2 data-[state=active]:border-dk-yellow"
       >
         IT
       </TabsTrigger>

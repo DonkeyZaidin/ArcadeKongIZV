@@ -1,74 +1,50 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 
 const WebTeam = () => {
   return (
-    <Card className="bg-dk-red border-4 border-dk-yellow overflow-hidden relative">
-      <CardHeader className="border-b-4 border-dk-yellow">
-        <CardTitle className="text-dk-yellow">EQUIPO DE PÁGINA WEB</CardTitle>
+    <Card className="bg-dk-red/80 border-2 border-dk-yellow">
+      <CardHeader className="border-b-2 border-dk-yellow pb-3">
+        <CardTitle className="text-dk-yellow text-xl">EQUIPO DE PÁGINA WEB</CardTitle>
       </CardHeader>
-      <CardContent className="pt-6">
-        <div className="grid md:grid-cols-2 gap-8">
+      <CardContent className="pt-4">
+        <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <h3 className="text-xl font-press-start mb-4 text-white">TECNOLOGÍAS FRONTEND</h3>
-            <div className="space-y-4 font-vt323 text-xl">
-              <div className="bg-black/60 p-4 border-l-4 border-dk-yellow">
-                <h4 className="text-dk-yellow mb-2">Diseño</h4>
-                <p>HTML5, CSS3, TailwindCSS, React</p>
+            <h3 className="text-lg font-press-start mb-3 text-white">TECNOLOGÍAS</h3>
+            <div className="space-y-2 font-vt323 text-lg">
+              <div className="bg-black/60 p-2 border-l-2 border-dk-yellow">
+                <h4 className="text-dk-yellow">Diseño</h4>
+                <p className="text-white/80 text-sm">HTML5, CSS3, React</p>
               </div>
-              <div className="bg-black/60 p-4 border-l-4 border-dk-green">
-                <h4 className="text-dk-green mb-2">Animaciones</h4>
-                <p>Framer Motion, GSAP, CSS Animations</p>
-              </div>
-              <div className="bg-black/60 p-4 border-l-4 border-dk-yellow">
-                <h4 className="text-dk-yellow mb-2">UI/UX</h4>
-                <p>Figma, Adobe XD, Photoshop</p>
+              <div className="bg-black/60 p-2 border-l-2 border-dk-green">
+                <h4 className="text-dk-green">Animaciones</h4>
+                <p className="text-white/80 text-sm">CSS Animations</p>
               </div>
             </div>
           </div>
           
           <div>
-            <h3 className="text-xl font-press-start mb-4 text-white">RESPONSABILIDADES</h3>
-            <ul className="space-y-4 font-vt323 text-xl">
+            <h3 className="text-lg font-press-start mb-3 text-white">TAREAS</h3>
+            <ul className="space-y-2 font-vt323 text-lg">
               <li className="flex items-start">
-                <div className="w-3 h-3 bg-dk-yellow mr-2 mt-2"></div>
+                <div className="w-2 h-2 bg-dk-yellow mr-2 mt-2"></div>
                 <div>
                   <span className="text-dk-green">Maquetación</span>
-                  <p className="text-white/80">Estructura y diseño responsive</p>
+                  <p className="text-white/80 text-sm">Diseño responsive</p>
                 </div>
               </li>
               <li className="flex items-start">
-                <div className="w-3 h-3 bg-dk-yellow mr-2 mt-2"></div>
+                <div className="w-2 h-2 bg-dk-yellow mr-2 mt-2"></div>
                 <div>
                   <span className="text-dk-green">Estilo Visual</span>
-                  <p className="text-white/80">Paleta de colores y efectos retro</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="w-3 h-3 bg-dk-yellow mr-2 mt-2"></div>
-                <div>
-                  <span className="text-dk-green">Documentación</span>
-                  <p className="text-white/80">README y guía de estilos</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="w-3 h-3 bg-dk-yellow mr-2 mt-2"></div>
-                <div>
-                  <span className="text-dk-green">SEO</span>
-                  <p className="text-white/80">Optimización para buscadores</p>
+                  <p className="text-white/80 text-sm">Paleta de colores retro</p>
                 </div>
               </li>
             </ul>
           </div>
         </div>
       </CardContent>
-      
-      {/* Plataformas estilo DK como decoración */}
-      <div className="absolute top-1/4 left-0 w-1/4 h-3 bg-dk-yellow z-0"></div>
-      <div className="absolute top-2/4 right-0 w-1/4 h-3 bg-dk-yellow z-0"></div>
-      <div className="absolute bottom-1/4 left-1/3 w-1/3 h-3 bg-dk-yellow z-0"></div>
     </Card>
   );
 };

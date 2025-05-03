@@ -127,19 +127,19 @@
   
   .pixel-border {
     box-shadow: 
-      0 4px 0 #FFFF00, 
-      4px 0 0 #FFFF00, 
-      0 -4px 0 #FFFF00, 
-      -4px 0 0 #FFFF00;
+      0 2px 0 #FFFF00, 
+      2px 0 0 #FFFF00, 
+      0 -2px 0 #FFFF00, 
+      -2px 0 0 #FFFF00;
   }
   
   .arcade-btn {
-    @apply bg-dk-red text-white font-press-start py-2 px-4 border-b-4 border-r-4 border-black hover:bg-dk-yellow hover:text-dk-black transition-all duration-200 transform hover:translate-y-1;
+    @apply bg-dk-red text-white font-press-start py-1 px-3 border-b-2 border-r-2 border-black hover:bg-dk-yellow hover:text-dk-black transition-all duration-200 transform hover:translate-y-1 text-sm;
   }
   
   .crt-frame {
-    @apply relative rounded-lg overflow-hidden;
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+    @apply relative rounded-md overflow-hidden;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
   }
   
   .crt-frame::before {
@@ -155,11 +155,11 @@
   }
   
   .brick {
-    @apply bg-dk-red border-t-4 border-l-4 border-white/30 relative;
+    @apply bg-dk-red border-t-2 border-l-2 border-white/30 relative;
   }
   
   .platform {
     @apply bg-dk-yellow h-4 relative;
-    box-shadow: 0 4px 0 #CC9900;
+    box-shadow: 0 2px 0 #CC9900;
   }
 }
