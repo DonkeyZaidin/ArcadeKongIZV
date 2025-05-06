@@ -14,46 +14,46 @@ const galleryImages = [
 
 const Gallery = () => {
   return (
-    <section className="py-12 bg-dk-black relative" id="galeria">
+    <section className="py-8 bg-dk-black relative" id="galeria">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-press-start text-dk-yellow mb-6 text-center">
+        <h2 className="text-xl md:text-2xl font-press-start text-dk-yellow mb-4 text-center">
           PANTALLA DE BONUS
         </h2>
         
-        <div className="absolute left-0 right-0 -top-2 platform"></div>
-        <div className="absolute left-0 right-0 -bottom-2 platform"></div>
+        <div className="absolute left-0 right-0 -top-2 h-4 bg-dk-yellow border-b-4 border-dk-black"></div>
+        <div className="absolute left-0 right-0 -bottom-2 h-4 bg-dk-yellow border-t-4 border-dk-black"></div>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 relative z-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-3 relative z-10">
           {galleryImages.map((image) => (
             <div key={image.id} className="group relative aspect-square">
-              <div className="absolute inset-0 bg-gradient-to-br from-dk-blue to-dk-black border border-dk-yellow overflow-hidden transition-all duration-300 transform group-hover:scale-105 group-hover:border-dk-red">
+              <div className="absolute inset-0 bg-gradient-to-br from-dk-blue to-dk-black border-4 border-dk-yellow overflow-hidden transition-all duration-300 transform group-hover:scale-105 group-hover:border-dk-red pixel-border">
                 <div className="w-full h-full flex flex-col items-center justify-center p-2">
-                  <div className={`w-12 h-12 mb-2 ${
+                  <div className={`w-10 h-10 mb-2 ${
                     image.category === 'carpintería' ? 'bg-[#5e4032]' : 
                     image.category === 'pintura' ? 'bg-dk-red' : 
                     image.category === 'montaje' ? 'bg-dk-gray' : 
                     image.category === 'it' ? 'bg-dk-green' : 'bg-dk-yellow'
-                  } rounded-full`}></div>
-                  <p className="text-center font-vt323 text-dk-yellow text-sm">
-                    {image.title}
+                  } border-2 border-dk-yellow`}></div>
+                  <p className="text-center font-press-start text-dk-yellow text-xs">
+                    {image.title.toUpperCase()}
                   </p>
                   <p className="text-center font-vt323 text-white/60 text-xs">
-                    {image.category}
+                    {image.category.toUpperCase()}
                   </p>
                 </div>
               </div>
-              <div className="absolute -top-1 -right-1 w-4 h-4 bg-dk-red opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center transform rotate-12">
-                <span className="text-white text-xs font-bold">♥</span>
+              <div className="absolute -top-2 -right-2 w-4 h-4 bg-dk-red border-2 border-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center transform rotate-12">
+                <span className="text-white text-xs font-bold">+</span>
               </div>
             </div>
           ))}
         </div>
       </div>
       
-      <div className="overflow-hidden absolute w-full h-6 bottom-0 left-0">
+      <div className="overflow-hidden absolute w-full h-4 bottom-8 left-0">
         <div className="animate-scroll whitespace-nowrap">
-          {Array(10).fill(0).map((_, i) => (
-            <div key={i} className="inline-block mx-3 w-4 h-4 bg-dk-yellow rounded-full border border-dk-red"></div>
+          {Array(15).fill(0).map((_, i) => (
+            <div key={i} className="inline-block mx-2 w-4 h-4 bg-dk-yellow border-2 border-dk-red"></div>
           ))}
         </div>
       </div>

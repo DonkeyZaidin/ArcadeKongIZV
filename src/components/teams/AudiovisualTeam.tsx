@@ -5,14 +5,14 @@ import { Button } from '@/components/ui/button';
 
 const AudiovisualTeam = () => {
   return (
-    <Card className="bg-black border-2 border-dk-yellow overflow-hidden relative">
-      <CardHeader className="border-b-2 border-dk-yellow pb-3">
-        <CardTitle className="text-dk-yellow text-xl">EQUIPO DE AUDIOVISUALES</CardTitle>
+    <Card className="bg-black border-4 border-dk-yellow overflow-hidden relative pixel-border">
+      <CardHeader className="border-b-4 border-dk-yellow pb-2">
+        <CardTitle className="text-dk-yellow text-lg">EQUIPO DE AUDIOVISUALES</CardTitle>
       </CardHeader>
-      <CardContent className="pt-4 relative z-10">
-        <div className="grid md:grid-cols-2 gap-6">
+      <CardContent className="pt-3 relative z-10">
+        <div className="grid md:grid-cols-2 gap-4">
           <div>
-            <h3 className="text-lg font-press-start mb-3 text-white">HERRAMIENTAS</h3>
+            <h3 className="text-base font-press-start mb-2 text-white">HERRAMIENTAS</h3>
             <ul className="space-y-2 font-vt323 text-lg">
               <li className="flex items-start">
                 <div className="w-2 h-2 bg-dk-yellow mr-2 mt-2"></div>
@@ -39,8 +39,8 @@ const AudiovisualTeam = () => {
           </div>
           
           <div className="flex items-center justify-center">
-            <div className="w-full max-w-md aspect-video bg-black flex items-center justify-center border-2 border-dk-green">
-              <Button className="arcade-btn text-sm" onClick={() => document.getElementById('video')?.scrollIntoView({ behavior: 'smooth' })}>
+            <div className="w-full max-w-md aspect-video bg-black flex items-center justify-center border-4 border-dk-green pixel-border">
+              <Button className="arcade-btn text-xs" onClick={() => document.getElementById('video')?.scrollIntoView({ behavior: 'smooth' })}>
                 VER MAKING-OF
               </Button>
               <div className="absolute inset-0 opacity-20" style={{

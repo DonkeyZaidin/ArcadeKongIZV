@@ -10,15 +10,18 @@ import ITWebTeam from '@/components/teams/ITWebTeam';
 
 const Teams = () => {
   return (
-    <section className="py-12 container mx-auto px-4" id="equipos">
-      <h2 className="text-2xl md:text-3xl font-press-start text-dk-yellow mb-6 text-center">
+    <section className="py-8 container mx-auto px-4 relative" id="equipos">
+      <div className="absolute left-0 top-10 bottom-10 w-4 bg-dk-red"></div>
+      <div className="absolute right-0 top-10 bottom-10 w-4 bg-dk-red"></div>
+      
+      <h2 className="text-xl md:text-2xl font-press-start text-dk-yellow mb-4 text-center">
         LOS CONSTRUCTORES
       </h2>
       
       <Tabs defaultValue="carpinteria" className="w-full">
         <TeamTabs />
         
-        <div className="mt-6">
+        <div className="mt-4">
           <TabsContent value="carpinteria">
             <CarpentryTeam />
           </TabsContent>
@@ -40,6 +43,11 @@ const Teams = () => {
           </TabsContent>
         </div>
       </Tabs>
+      
+      {/* Plataformas estilo Donkey Kong */}
+      <div className="absolute left-10 w-20 h-3 bg-dk-yellow bottom-10"></div>
+      <div className="absolute left-1/3 w-24 h-3 bg-dk-yellow bottom-20"></div>
+      <div className="absolute right-1/3 w-20 h-3 bg-dk-yellow bottom-30"></div>
     </section>
   );
 };
