@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/48c57433-fac5-4901-a983-40248fbd4c35
+**URL**: https://arcade-project-kong-quest.lovable.app
 
 ## How can I edit this code?
 
