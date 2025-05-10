@@ -17,22 +17,22 @@ const AudiovisualTeam = () => {
               <li className="flex items-start">
                 <div className="w-2 h-2 bg-dk-yellow mr-2 mt-2"></div>
                 <div>
-                  <span className="text-dk-green">GoPro Hero 9</span>
+                  <span className="text-dk-green">iPhone 14</span>
                   <p className="text-white/80 text-sm">Grabación del montaje</p>
                 </div>
               </li>
               <li className="flex items-start">
                 <div className="w-2 h-2 bg-dk-yellow mr-2 mt-2"></div>
                 <div>
-                  <span className="text-dk-green">Canon EOS 80D</span>
-                  <p className="text-white/80 text-sm">Fotografías</p>
+                  <span className="text-dk-green">Premier</span>
+                  <p className="text-white/80 text-sm">Edición de vídeo</p>
                 </div>
               </li>
               <li className="flex items-start">
                 <div className="w-2 h-2 bg-dk-yellow mr-2 mt-2"></div>
                 <div>
-                  <span className="text-dk-green">Adobe Premiere</span>
-                  <p className="text-white/80 text-sm">Edición de vídeo</p>
+                  <span className="text-dk-green">Micrófono inalámbrico de clip</span>
+                  <p className="text-white/80 text-sm">Captura de audio</p>
                 </div>
               </li>
             </ul>

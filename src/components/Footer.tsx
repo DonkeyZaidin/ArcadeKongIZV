@@ -14,30 +14,11 @@ const Footer = () => {
       
       {/* Main footer content */}
       <div className="container mx-auto px-4 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* About */}
-          <div>
-            <h3 className="font-press-start text-dk-yellow mb-4">SOBRE EL PROYECTO</h3>
-            <p className="font-vt323 text-white text-xl">
-              Proyecto colaborativo para la construcción de una máquina arcade inspirada en los clásicos de los 80s, 
-              especialmente en Donkey Kong.
-            </p>
-          </div>
-          
-          {/* Contact */}
-          <div>
-            <h3 className="font-press-start text-dk-yellow mb-4">CONTACTO</h3>
-            <ul className="font-vt323 text-white text-xl space-y-2">
-              <li>📧 arcade-project@example.com</li>
-              <li>📱 +XX XXX XXX XXX</li>
-              <li>🏠 Calle Arcade, 123</li>
-            </ul>
-          </div>
-          
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
           {/* Social */}
-          <div>
+          <div className="text-center">
             <h3 className="font-press-start text-dk-yellow mb-4">SÍGUENOS</h3>
-            <div className="flex space-x-4">
+            <div className="flex justify-center space-x-4">
               <a href="#" className="bg-dk-blue p-3 rounded-full hover:bg-dk-red transition-colors">
                 <Twitter className="h-6 w-6 text-dk-yellow" />
               </a>
